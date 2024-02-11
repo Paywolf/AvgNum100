@@ -1,0 +1,15 @@
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        Random random = new Random(); // creates random
+        int arraySize = 100;
+        int[] numbers = new int[arraySize]; // creates an array of int, called numbers, size of 100
+        int avgNum=0;
+        for(int i=0; i<arraySize; i++){
+            numbers[i] = random.nextInt(arraySize); // iteration of array setting to random number with bound of 100 also
+            avgNum+=numbers[i];
+        }
+        System.out.println("The average is " +avgNum/arraySize+ ".");
+    }
+}
